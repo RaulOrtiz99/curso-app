@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body> 
-    <h1>Vista creada en blade y creada desde el controlador</h1>
-    <h2>Listado de juegos</h2>
+<body>
+    <h1>El nombre del video juego y la categoria es:</h1>
     
 </body>
 </html>
