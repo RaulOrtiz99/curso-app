@@ -7,7 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>El nombre del video juego y la categoria es:</h1>
+
+    @if($categoryGame)
+        <h1>El nombre del video juego es: {{ $nameVideogame }}  y la categoria es: {{ $categoryGame }}:</h1>
+    @else 
+        <h1>El nombre del videojuego es:{{ $nameVideogame }}</h1>
+    @endif
+
+
+
+
     
 </body>
 </html>

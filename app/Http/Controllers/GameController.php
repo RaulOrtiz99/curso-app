@@ -21,7 +21,7 @@ class GameController extends Controller
 
     public function help($name_game, $categoria = null)
     {
-        return view('show');
+        return view('show',['nameVideogame'=>$name_game,'categoryGame'=>$categoria]);
 
         // if ($categoria) {
         //     return "Bienvenido a la pagina del juego:" . $name_game . "que pertenece a la categoria :" . $categoria;
