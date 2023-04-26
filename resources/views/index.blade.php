@@ -9,6 +9,12 @@
 <body> 
     <h1>Vista creada en blade y creada desde el controlador</h1>
     <h2>Listado de juegos</h2>
+    @foreach ($games as $item)
+        <li>{{$item}}</li>
+    @endforeach
     
+   
+
+
 </body>
 </html>

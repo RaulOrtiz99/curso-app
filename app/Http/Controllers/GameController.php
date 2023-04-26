@@ -9,8 +9,9 @@ class GameController extends Controller
 
     public function index()
     {
+        $videogames = array('Fifa22', 'NBA 22', 'Mario Kart', 'Super Mario');
         // return "Bienvenido a la web que listara los juegos comprados";
-        return view('index');
+        return view('index',['games'=>$videogames]);
     }
 
     public function create()
@@ -21,7 +22,7 @@ class GameController extends Controller
 
     public function help($name_game, $categoria = null)
     {
-        return view('show',['nameVideogame'=>$name_game,'categoryGame'=>$categoria]);
+        return view('show', ['nameVideogame' => $name_game, 'categoryGame' => $categoria]);
 
         // if ($categoria) {
         //     return "Bienvenido a la pagina del juego:" . $name_game . "que pertenece a la categoria :" . $categoria;
@@ -30,4 +31,5 @@ class GameController extends Controller
         // }
 
     }
+
 }
